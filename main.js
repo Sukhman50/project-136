@@ -37,6 +37,7 @@ if(results.length >0){
     rightWristX = results[0].pose.rightWrist.x;
     difference = floor(leftWristX - rightWristX);
 
-    console.log("leftWristX = " + leftWristX + " rightWristX = " + rightWristX + " differnce = " + difference)
+    console.log("leftWristX = " + leftWristX + " rightWristX = " + rightWristX + " differnce = " + difference);
+    document.getElementById("width").innerHTML = "The width of the text wil be : " + difference + "px";
 }
 }
